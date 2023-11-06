@@ -1,6 +1,9 @@
 name: Build and Push Docker image to Docker Hub - Track 5 (WALC 2023)
 
-on: push
+on:
+  push:
+    branches:
+    - main
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
@@ -20,4 +23,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: julian92/walc2023_track5_ci-cd-prueba:latest
+          tags: julian92/walc2023_track5_ci-cd:github-actions
