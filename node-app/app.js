@@ -21,9 +21,9 @@ app.get('/api/greetings', (req, res) => {
 });
 
 //GET endpoint - Goodbye
-/*app.get('/api/goodbye', (req, res) => {
+app.get('/api/goodbye', (req, res) => {
   res.json({ message: 'Gracias por asistir al Track 5 (Servicios en la Nube) - WALC 2023 - Guayaquil, Ecuador. Nos vemos pronto!' });
-});*/
+});
 
 //POST endpoint - Add new email to list
 /*app.post('/api/addEmail', function(req, res) {
